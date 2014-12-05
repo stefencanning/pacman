@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fsm>
+	<state>
+		<statename>attack</statename>
+		<check>0</check>
+		<action>0</action>
+		<first>hover</first>
+		<second>edible</second>
+		<third>edible</third>
+	</state>
+	<state>
+		<statename>hover</statename>
+		<check>1</check>
+		<action>1</action>
+		<first>run</first>
+		<second>attack</second>
+		<third>edible</third>
+	</state>
+	<state>
+		<statename>run</statename>
+		<check>2</check>
+		<action>2</action>
+		<first>hover</first>
+		<second>edible</second>
+		<third>edible</third>
+	</state>
+	<state>
+		<statename>edible</statename>
+		<check>3</check>
+		<action>3</action>
+		<first>attack</first>
+		<second>attack</second>
+		<third>attack</third>
+	</state>
+</fsm>
